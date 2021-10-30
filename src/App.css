@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: "Lato", sans-serif;
+}
+h5,
+p {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #141414;
+  color: whitesmoke;
+}

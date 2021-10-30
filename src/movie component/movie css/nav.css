@@ -1,0 +1,96 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  background: transparent;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+.menu-dropdown {
+  background: #141414;
+  width: 100%;
+  position: absolute;
+  top: 10;
+  padding: 30px;
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  /* z-index: 100; */
+}
+
+@-webkit-keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.nav-flex-2 {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  transition: 1s ease-in-out all;
+}
+.nav-flex-2 li {
+  list-style: none;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: 1s ease-in-out all;
+}
+.nav-flex-2 li:hover {
+  background: lightgray;
+  padding: 10px;
+  transition: 1s ease-in-out all;
+}
+.nav-flex {
+  display: none;
+}
+.nav-flex li {
+  list-style: none;
+}
+@media only screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    position: fixed;
+    background: transparent;
+    width: 100%;
+  }
+  .nav-flex {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-flex li {
+    list-style: none;
+  }
+  .mobile-nav {
+    display: none;
+  }
+}

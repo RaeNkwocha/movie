@@ -1,0 +1,54 @@
+.mobile-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(1fr, 2);
+  margin: 50px;
+}
+.mobile-textholder h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.mobile-textholder h5 {
+  font-weight: 100;
+  line-height: 1.3rem;
+}
+.band {
+  background: #e50914;
+  padding: 30px;
+}
+.band h3 {
+  font-size: 48px;
+  text-align: center;
+}
+.last {
+  display: grid;
+  place-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.last button {
+  background-color: #e50914; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .mobile-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40% 60%;
+    margin: 50px;
+  }
+  .mobile-textholder h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .mobile-textholder h5 {
+    font-weight: 100;
+    line-height: 1.3rem;
+  }
+}
